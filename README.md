@@ -20,38 +20,28 @@ Follow these steps to set up and run the application locally:
 - Python 3.9 or higher
 - A valid **Google Gemini API key**
 
-### Steps to Run
+## Steps to Run
 
-1. **Clone the repository**  
-   ```bash
-   git clone <repository_url>
-   cd <repository_name>
+```bash
+# 1. Clone the repository
+git clone <repository_url>
+cd <repository_name>
 
-Set up a virtual environment
-
-On Windows:
-bash
-Copy code
+# 2. Set up a virtual environment
+# On Windows:
 python -m venv venv
 venv\Scripts\activate
-On macOS/Linux:
-bash
-Copy code
+
+# On macOS/Linux:
 python -m venv venv
 source venv/bin/activate
-Install dependencies
 
-bash
-Copy code
+# 3. Install dependencies
 pip install -r requirements.txt
-Set up environment variables
 
-Create a .env file in the project root directory with the following content:
-makefile
-Copy code
-GOOGLE_API_KEY=your-google-gemini-api-key
-Run the app
+# 4. Set up environment variables
+# Create a .env file in the project root directory with the following content:
+# GOOGLE_API_KEY=your-google-gemini-api-key
 
-bash
-Copy code
+# 5. Run the app
 streamlit run app.py
